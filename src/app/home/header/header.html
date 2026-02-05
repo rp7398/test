@@ -1,0 +1,28 @@
+<header class="header bg-white shadow-md fixed w-full z-50 p-4 flex justify-between items-center">
+  <div class="logo text-2xl font-bold text-indigo-600"><span>IT</span> Services</div>
+
+  <!-- Mobile Toggle -->
+  <label for="menu-toggle" class="menu-btn cursor-pointer">☰</label>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
+
+  <nav class="nav-links space-x-4">
+    <a routerLink="/home" routerLinkActive="font-bold text-indigo-600" [routerLinkActiveOptions]="{ exact: true }">
+      Home
+    </a>
+    <a routerLink="/about-us" routerLinkActive="font-bold text-indigo-600">
+      About
+    </a>
+    <a routerLink="/services" routerLinkActive="font-bold text-indigo-600">
+      Service
+    </a>
+    <a routerLink="/process" routerLinkActive="font-bold text-indigo-600">
+      Process
+    </a>
+    <a routerLink="/industries" routerLinkActive="font-bold text-indigo-600">
+      Industries
+    </a>
+    <a routerLink="/contact" class="nav-cta font-bold text-white bg-indigo-600 px-4 py-2 rounded">
+      Get Quote
+    </a>
+  </nav>
+</header>
