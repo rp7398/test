@@ -1,50 +1,83 @@
 <!-- FOOTER -->
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-container">
-      <!-- COLUMN 1: LOGO -->
-      <div>
-        <div class="footer-logo"><span>IT</span> Services</div>
-        <p>
-          Secure, scalable, and future-ready IT solutions designed to help businesses grow with
-          confidence.
-        </p>
-      </div>
-
-      <!-- COLUMN 2: SERVICES -->
-
-      <div>
-        <h4>Quick Links</h4>
-        <a href="#hero">Home</a>
-        <a href="#services">About Us</a>
-        <a href="#process">Our Process</a>
-        <a href="#industries">Industries</a>
-        <a href="/contact">Contact</a>
-      </div>
-
-      <!-- COLUMN 3: QUICK LINKS -->
-      <div>
-        <h4>Services</h4>
-        <a href="/services/cloud">Cloud Services</a>
-        <a href="/services/cybersecurity">Cybersecurity</a>
-        <a href="/services/website-development">Website Development</a>
-        <a href="/services/it-support">IT Support & Helpdesk</a>
-        <a href="/services/networking">Network & Infrastructure</a>
-      </div>
-
-      <!-- COLUMN 4: CONTACT -->
-      <div>
-        <h4>Contact Us</h4>
-        <p>Email: support@yourcompany.com</p>
-        <p>Phone: +1 (555) 123-4567</p>
-
-        <div class="footer-social">
-          <a href="#" target="_blank">LinkedIn</a>
-          <a href="#" target="_blank">GitHub</a>
-          <a href="#">Email</a>
-        </div>
-      </div>
+<footer class="bg-gray-900 text-gray-200 pt-12">
+  <div class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- COLUMN 1: LOGO -->
+    <div>
+      <div class="text-2xl font-bold text-indigo-600 mb-4"><span>IT</span> Services</div>
+      <p class="text-gray-400">
+        Secure, scalable, and future-ready IT solutions designed to help businesses grow with
+        confidence.
+      </p>
     </div>
 
-    <div class="footer-bottom">© 2026 Your Company. All rights reserved.</div>
-  </footer>
+    <!-- COLUMN 2: QUICK LINKS -->
+    <div>
+      <h4 class="font-semibold mb-4 text-white">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a href="/home" class="hover:text-indigo-500 transition">Home</a></li>
+        <li><a href="/about-us" class="hover:text-indigo-500 transition">About Us</a></li>
+        <li><a href="/process" class="hover:text-indigo-500 transition">Our Process</a></li>
+        <li><a href="/industries" class="hover:text-indigo-500 transition">Industries</a></li>
+        <li><a href="/contact" class="hover:text-indigo-500 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- COLUMN 3: SERVICES -->
+    <div>
+      <h4 class="font-semibold mb-4 text-white">Services</h4>
+      <ul class="space-y-2">
+        <li>
+          <a href="/service/cloud" class="hover:text-indigo-500 transition">Cloud Services</a>
+        </li>
+        <li>
+          <a href="/service/cybersecurity" class="hover:text-indigo-500 transition"
+            >Cybersecurity</a
+          >
+        </li>
+        <li>
+          <a href="/service/website" class="hover:text-indigo-500 transition"
+            >Website Development</a
+          >
+        </li>
+        <li>
+          <a href="/service/it-support" class="hover:text-indigo-500 transition"
+            >IT Support & Helpdesk</a
+          >
+        </li>
+        <li>
+          <a href="/service/networking" class="hover:text-indigo-500 transition"
+            >Network & Infrastructure</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- COLUMN 4: CONTACT -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-6">Contact Information</h2>
+      <div class="space-y-4">
+        <p><span class="font-semibold">Address:</span> 123 IT Services Lane, Tech City, TX 75001</p>
+        <p>
+          <span class="font-semibold">Phone: </span>
+          <a href="tel:+919876543210" class="hover:text-indigo-500 transition">+91 9876543210</a>
+        </p>
+        <p>
+          <span class="font-semibold">Email: </span>
+          <a href="mailto:info@itservices.com" class="hover:text-indigo-500 transition"
+            >info@itservices.com</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm">
+    <p class="pt-2 pb-5 bg-gray-900">
+      © 2026
+      <a href="https://angular.io" target="_blank" class="text-indigo-500 hover:text-indigo-400"
+        >Angular</a
+      >. All rights reserved.
+    </p>
+  </div>
+</footer>
