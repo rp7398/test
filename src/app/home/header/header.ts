@@ -18,6 +18,7 @@ export class Header {
     { name: 'Service', url: '/service' },
     { name: 'Process', url: '/process' },
     { name: 'Industries', url: '/industries' },
+    { name: 'Api Test', url: '/weathers' },
   ];
   isShown = signal(false);
   public links: Array<{ name: string, url: string }> = [

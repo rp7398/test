@@ -1,0 +1,33 @@
+<div class="p-1 max-w-md mx-auto bg-white rounded shadow py-45">
+  <h2 class="text-2xl font-bold mb-4 text-center text-indigo-700">Check Current Weather</h2>
+
+  <input
+    type="text"
+    [(ngModel)]="city"
+    placeholder="Enter city name, e.g., New York"
+    class="border border-gray-300 p-2 rounded w-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
+  />
+
+  <button
+    type="button"
+    (click)="checkWeather()"
+    [disabled]="!city || loading"
+    class="bg-indigo-600 disabled:bg-indigo-500 text-white px-4 py-2 rounded mt-3 w-full hover:bg-indigo-700 transition"
+  >
+    {{ loading ? 'Loading...' : 'Check Weather' }}
+  </button>
+
+  <!-- Error message -->
+  <div *ngIf="error" class="mt-4 text-red-600 font-semibold text-center">
+    {{ error }}
+  </div>
+
+  <!-- Weather Result -->
+  <div *ngIf="weather" class="mt-6 bg-indigo-50 p-4 rounded border border-indigo-200 shadow-inner">
+    <h3 class="text-xl font-semibold mb-2 text-indigo-900">{{ weather.name }}, {{ weather.sys?.country }}</h3>
+    <p><b>Temperature:</b> {{ weather.main.temp }} °C</p>
+    <p><b>Condition:</b> {{ weather.weather[0].description | titlecase }}</p>
+    <p><b>Humidity:</b> {{ weather.main.humidity }}%</p>
+    <p><b>Wind Speed:</b> {{ weather.wind.speed }} m/s</p>
+  </div>
+</div>
